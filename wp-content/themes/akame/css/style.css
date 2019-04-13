@@ -1156,4 +1156,17 @@ text-shadow: none;
 		font-size: 2em;
 	}
 
-	
+
+.page-numbers.current {
+	background-color: #242716;
+	padding: 4px 9px;
+	border-radius: 18px;
+	color: #fff;
+	margin-right: 4px;
+}
+.page-numbers {
+	margin-right: 10px;
+	background-color: #e7e7e7;
+	padding: 4px 9px;
+	border-radius: 18px;
+}

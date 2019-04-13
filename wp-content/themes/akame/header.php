@@ -66,45 +66,15 @@
                             <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                         </div>
                         <!-- Nav Start -->
-                        <div class="classynav">
-                            <ul id="nav">
-                                <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="./index.html">- Home</a></li>
-                                        <li><a href="./about.html">- About Us</a></li>
-                                        <li><a href="./service.html">- Services</a></li>
-                                        <li><a href="./portfolio.html">- Portfolio</a></li>
-                                        <li><a href="./blog.html">- Blog</a></li>
-                                        <li><a href="./single-blog.html">- Blog Details</a></li>
-                                        <li><a href="./contact.html">- Contact</a></li>
-                                        <li><a href="#">- Dropdown</a>
-                                            <ul class="dropdown">
-                                                <li><a href="#">- Dropdown Item</a></li>
-                                                <li><a href="#">- Dropdown Item</a></li>
-                                                <li><a href="#">- Dropdown Item</a></li>
-                                                <li><a href="#">- Dropdown Item</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="./portfolio.html">Portfolio</a></li>
-                                <li><a href="./service.html">Services</a></li>
-                                <li><a href="./about.html">About Us</a></li>
-                                <li><a href="./blog.html">Blog</a></li>
-                                <li><a href="./contact.html">Contact</a></li>
-                            </ul>
-
-                            <!-- Cart Icon -->
-                            <div class="cart-icon ml-5 mt-4 mt-lg-0">
-                                <a href="#"><i class="icon_cart"></i></a>
-                            </div>
-
-                            <!-- Book Icon -->
-                            <div class="book-now-btn ml-5 mt-4 mt-lg-0 ml-md-4">
-                                <a href="#" class="btn akame-btn">Book Now</a>
-                            </div>
-                        </div>
+                        <?php wp_nav_menu(array(
+                            'theme_location'=>'header_menu',
+                            'container'=>'div',
+                            'container_class'=>'classynav',
+                            'menu_id'=>'nav',
+                            'depth'=>'3',
+//                            'fallback_cb'=>'WP_Bootstrap_Navwalker::fallback',
+//                            'walker'=> new WP_Bootstrap_Navwalker()
+                        )); ?>
                         <!-- Nav End -->
                     </div>
                 </nav>
